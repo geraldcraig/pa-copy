@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" xmlns:th="http://thymeleaf.org">
 <head>
 
@@ -12,7 +12,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
     <!-- Custom Styles  -->
 
-<title></title>
+<title th:text></title>
 </head>
 
 <body>
@@ -22,25 +22,43 @@
       <a class="nav-link" href="/">Home</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="/Page2">Page2</a>
+      <a class="nav-link" href="/disney">Disney</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="/Page3">Page3</a>
+      <a class="nav-link" href="/tolkien">Tolkien</a>
     </li>
   </ul>
 </nav>
 <div class="jumbotron text-center">
 
-<h1>This website is about children's movies</h1>
-<h2></h2>
+<h1>Tolkien Dwarfs</h1>
+<h2 th:text= "${numberOfDwarfs}"></h2>
 <br />
 
 </div>
 
 
-<div>
+<div class="container">
 
-<p>This site will contain information about Shrek and Toy Story movies�
+<p>This site will contain information about Tolkien Dwarfs</p>
+
+<table class="table table-striped">
+   <thead>
+      <tr>
+           <th>Name</th>
+           <th>Picture</th>
+       </tr>
+   </thead>
+   <tbody>
+   
+   </tbody>
+           
+        <tr th:each="dwarf: ${dwarfs}">   
+           <td th:text="${dwarf.name}">Balin</td>
+           <td><img  src="../static/img/Balin.png" th:src="@{/img/} + ${dwarf.image}"></img></td>
+      </tr>
+  
+</table>
 
 </div>
 
