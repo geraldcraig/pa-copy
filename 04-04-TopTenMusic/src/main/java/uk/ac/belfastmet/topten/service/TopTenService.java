@@ -19,22 +19,21 @@ public class TopTenService {
 		this.singlesTopTen = new ArrayList<Song>();
 		
 		//add singles here!
-		this.singlesTopTen.add(new Song("Take Me BackTo London", "Ed Sheeran", "ed.png"));
+		this.singlesTopTen.add(new Song("Take Me Back To London", "Ed Sheeran", "ed.png"));
 		
 		
 		return this.singlesTopTen;
 	}
-//	
-//	public ArrayList<TopTen> getalbumsTopTen() {
-//		
-//		this.albumsTopTen = new ArrayList<TopTen>();
-//		
-//		//add albums here!
-//		this.albumsTopTen.add(new TopTen("", "Albums", ".png"));
-//		
-//		
-//		
-//		return this.albumsTopTen;
-//}
+	
+	public ArrayList<Album> getalbumsTopTen() {
+		
+		this.albumsTopTen = new ArrayList<Album>();
+		
+		//add albums here!
+		this.albumsTopTen.add(new Album("", "Albums", ".png"));
+			
+		
+		return this.albumsTopTen;
+}
 
 }
