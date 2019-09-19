@@ -20,6 +20,10 @@ public class TopTenService {
 		
 		//add singles here!
 		this.singlesTopTen.add(new Song("Take Me Back To London", "Ed Sheeran", "ed.png"));
+		this.singlesTopTen.add(new Song("Taste (Make It Shake", "Aitch", "ed.png"));
+		this.singlesTopTen.add(new Song("Higher Love", "Kygo & Whitney Houston", "ed.png"));
+		this.singlesTopTen.add(new Song("Ladbroke Grove", "AJ Tracey", "ed.png"));
+		this.singlesTopTen.add(new Song("Circles", "Post Malone", "ed.png"));
 		
 		
 		return this.singlesTopTen;

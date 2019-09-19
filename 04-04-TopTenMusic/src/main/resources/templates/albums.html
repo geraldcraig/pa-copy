@@ -53,9 +53,9 @@
    
    </tbody>
            
-        <tr th:each="dwarf: ${dwarfs}">   
-           <td th:text="${dwarf.name}">Happy</td>
-           <td><img  src="../static/img/Happy.png" th:src="@{/img/} + ${dwarf.image}"></img></td>
+        <tr th:each="album: ${albums}">   
+           <td th:text="${album.artist}">Happy</td>
+           <td><img  src="../static/img/Happy.png" th:src="@{/img/} + ${album.image}"></img></td>
       </tr>
   
 </table>
