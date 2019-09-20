@@ -14,13 +14,17 @@ public class Album {
 	
 	}
 	
-	
+	/*add toString to class
+	 * public String toString() {
+	 * 		return name + "" + type;
+	 * }
+	 */
 	public Album(String title, String artist, String image, String position) {
 		super();
 		this.title = title;
 		this.artist = artist;
 		this.image = image;
-		this.image = position;
+		this.position = position;
 	}
 	public String getTitle() {
 		return title;

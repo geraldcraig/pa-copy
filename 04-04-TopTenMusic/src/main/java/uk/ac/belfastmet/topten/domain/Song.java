@@ -6,6 +6,7 @@ public class Song {
 	private String title;
 	private String artist;
 	private String image;
+	private String position;
 	
 	
 	public Song() {
@@ -18,11 +19,12 @@ public class Song {
 	 * 		return name + "" + type;
 	 * }
 	 */
-	public Song(String title, String artist, String image) {
+	public Song(String title, String artist,  String image, String position) {
 		super();
 		this.title = title;
 		this.artist = artist;
 		this.image = image;
+		this.position = position;
 	}
 	public String getTitle() {
 		return title;
@@ -41,6 +43,12 @@ public class Song {
 	}
 	public void setImage(String image) {
 		this.image = image;
+	}
+	public String getPosition() {
+		return position;
+	}
+	public void setPosition(String position) {
+		this.position = position;
 	}
 	
 }

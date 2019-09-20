@@ -40,9 +40,26 @@
 
 <div class="container">
 
-<p>This site will contain information of top ten singles and albums</p>
+<p>The official site for the top ten singles and albums</p>
+<table class="table table-striped">
+   <thead>
+      <tr>
+           <th>Picture</th>
+       </tr>
+   </thead>
+   <tbody>
+   
+   </tbody>
+           
+        <tr th:each="album: ${albums}">   
+           <td><img th:src="@{/img/} + ${album.image}"></img></td>
+      </tr>
+  
+</table>
+
 
 </div>
+
 
 </body>
 </html>

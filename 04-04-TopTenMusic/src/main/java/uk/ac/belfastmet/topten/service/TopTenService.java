@@ -19,16 +19,16 @@ public class TopTenService {
 		this.singlesTopTen = new ArrayList<Song>();
 		
 		//add singles here!
-		this.singlesTopTen.add(new Song("Take Me Back To London", "Ed Sheeran Ft. Stormzy", "edSheeran.png"));
-		this.singlesTopTen.add(new Song("Taste (Make It Shake)", "Aitch", "aitch.png"));
-		this.singlesTopTen.add(new Song("Higher Love", "Kygo & Whitney Houston", "kygo.png"));
-		this.singlesTopTen.add(new Song("Ladbroke Grove", "AJ Tracey", "ajTracey.png"));
-		this.singlesTopTen.add(new Song("Circles", "Post Malone", "postMalone.png"));
-		this.singlesTopTen.add(new Song("Sorry", "Joel Corry", "joelCorry.png"));
-		this.singlesTopTen.add(new Song("3 Nights", "Dominic Fike", "dominicFike.png"));
-		this.singlesTopTen.add(new Song("Ransom", "Lil Tecca", "lilTecca.png"));
-		this.singlesTopTen.add(new Song("Strike A Pose", "Young T & Bugsey Ft Aitch", "youngT.png"));
-		this.singlesTopTen.add(new Song("Goodbyes", "Post Malone Ft Young Thug", "postMaloneFtYoungThug.png"));
+		this.singlesTopTen.add(new Song("Take Me Back To London", "Ed Sheeran Ft. Stormzy", "edSheeran.png",  "1"));
+		this.singlesTopTen.add(new Song("Taste (Make It Shake)", "Aitch", "aitch.png", "2"));
+		this.singlesTopTen.add(new Song("Higher Love", "Kygo & Whitney Houston", "kygo.png","3"));
+		this.singlesTopTen.add(new Song("Ladbroke Grove", "AJ Tracey", "ajTracey.png", "4"));
+		this.singlesTopTen.add(new Song("Circles", "Post Malone", "postMalone.png", "5"));
+		this.singlesTopTen.add(new Song("Sorry", "Joel Corry", "joelCorry.png", "6"));
+		this.singlesTopTen.add(new Song("3 Nights", "Dominic Fike", "dominicFike.png", "7"));
+		this.singlesTopTen.add(new Song("Ransom", "Lil Tecca", "lilTecca.png", "8"));
+		this.singlesTopTen.add(new Song("Strike A Pose", "Young T & Bugsey Ft Aitch", "youngT.png", "9"));
+		this.singlesTopTen.add(new Song("Goodbyes", "Post Malone Ft Young Thug", "postMaloneFtYoungThug.png", "10"));
 		
 		
 		return this.singlesTopTen;
