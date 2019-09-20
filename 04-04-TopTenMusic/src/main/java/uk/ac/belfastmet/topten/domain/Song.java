@@ -13,7 +13,11 @@ public class Song {
 		
 	}
 	
-	
+	/*add toString to class
+	 * public String toString() {
+	 * 		return name + "" + type;
+	 * }
+	 */
 	public Song(String title, String artist, String image) {
 		super();
 		this.title = title;

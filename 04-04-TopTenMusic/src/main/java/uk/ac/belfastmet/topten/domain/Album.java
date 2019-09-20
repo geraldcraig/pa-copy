@@ -6,6 +6,7 @@ public class Album {
 	private String title;
 	private String artist;
 	private String image;
+	private String position;
 	
 	
 	public Album() {
@@ -14,11 +15,12 @@ public class Album {
 	}
 	
 	
-	public Album(String title, String artist, String image) {
+	public Album(String title, String artist, String image, String position) {
 		super();
 		this.title = title;
 		this.artist = artist;
 		this.image = image;
+		this.image = position;
 	}
 	public String getTitle() {
 		return title;
@@ -37,6 +39,12 @@ public class Album {
 	}
 	public void setImage(String image) {
 		this.image = image;
+	}
+	public String getPosition() {
+		return position;
+	}
+	public void setPosition(String position) {
+		this.position = position;
 	}
 	
 }

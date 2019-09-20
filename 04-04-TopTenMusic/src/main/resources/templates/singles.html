@@ -45,8 +45,10 @@
 <table class="table table-striped">
    <thead>
       <tr>
-           <th>Name</th>
+           <th>Title</th>
+           <th>Artist</th>
            <th>Picture</th>
+           <th>Chart Position</th>
        </tr>
    </thead>
    <tbody>
@@ -54,8 +56,9 @@
    </tbody>
            
         <tr th:each="song: ${singles}">   
-           <td th:text="${song.title}">ED</td>
-           <td><img  src="../static/img/Happy.png" th:src="@{/img/} + ${song.image}"></img></td>
+           <td th:text="${song.title}"></td>
+           <td th:text="${song.artist}"></td>
+           <td><img  src="../static/img/Happy.png" th:src="@{/img/} + ${song.image}"></img></td> 
       </tr>
       
   
