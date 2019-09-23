@@ -46,7 +46,7 @@ public class ToDoController {
 		model.addAttribute("myName", name);
 		
 		
-		log.info("index page");
+		log.info("page 2");
 		
 		return "page2";
 		
