@@ -3,6 +3,8 @@ package uk.ac.belfastmet.topten.domain;
 public class Album {
 	
 	
+	
+	
 	private String title;
 	private String artist;
 	private String image;

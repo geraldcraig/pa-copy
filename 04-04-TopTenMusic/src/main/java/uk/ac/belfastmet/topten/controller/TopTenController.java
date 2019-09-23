@@ -18,6 +18,8 @@ import org.slf4j.LoggerFactory;
 public class TopTenController {
 	
 	
+	
+	
 	Logger log = LoggerFactory.getLogger(TopTenController.class);
 
 	
@@ -28,6 +30,12 @@ public class TopTenController {
 		
 		return "index";
 	}
+	
+	/**
+	 * This method is sending singles list
+	 * @param model
+	 * @return
+	 */
 	
 	@GetMapping("/singles")
 	public String singlesPage(Model model) {
