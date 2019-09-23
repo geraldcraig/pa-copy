@@ -21,10 +21,10 @@
     <li class="nav-item">
       <a class="nav-link" href="/">Home</a>
     </li>
-    <li class="nav-item active">
+    <li class="nav-item">
       <a class="nav-link" href="/Page2">Completed</a>
     </li>
-    <li class="nav-item">
+    <li class="nav-item active">
       <a class="nav-link" href="/Page3">In Progress</a>
     </li>
   </ul>
@@ -33,7 +33,7 @@
 
 <h1>To Do List</h1>
 <h2>
-	<span th:text="'Completed' "></span>
+	<span th:text="'Unfinished' "></span>
 </h2>
 <br />
 		
@@ -57,7 +57,7 @@
 	
 	</tbody>
 	
-		<tr th:each="task: ${tasks}" th:if="${task.status}">
+		<tr th:each="task: ${tasks}" th:if="${!task.status}">
 			<td th:text="${task.task}"></td>
 			<td th:text="${task.description}"></td>
 			<td th:text="${task.date}"></td>
