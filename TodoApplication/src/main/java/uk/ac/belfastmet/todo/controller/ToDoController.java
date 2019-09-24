@@ -2,6 +2,7 @@ package uk.ac.belfastmet.todo.controller;
 
 import org.slf4j.LoggerFactory;
 import org.slf4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,6 +14,9 @@ import uk.ac.belfastmet.todo.service.ToDoService;
 @Controller
 @RequestMapping
 public class ToDoController {
+	
+	@Autowired
+	private ToDoService todoService;
 
 	Logger log = LoggerFactory.getLogger(ToDoController.class);
 
@@ -21,11 +25,13 @@ public class ToDoController {
 	 * @param model
 	 * @return
 	 */
-
+	
 	@GetMapping("/")
 	public String homePage(Model model) {
+		
+		todoService.getNumberOfTasks();
 
-		ToDoService todoService = new ToDoService();
+		
 		model.addAttribute("tasks", todoService.gettaskToDo());
 
 		String name = "Gerald";
@@ -46,7 +52,7 @@ public class ToDoController {
 	@GetMapping("/Page2")
 	public String page2Page(Model model) {
 
-		ToDoService todoService = new ToDoService();
+		
 		model.addAttribute("tasks", todoService.gettaskToDo());
 
 		String name = "Gerald";
@@ -67,7 +73,7 @@ public class ToDoController {
 	@GetMapping("/Page3")
 	public String page3Page(Model model) {
 
-		ToDoService todoService = new ToDoService();
+		
 		model.addAttribute("tasks", todoService.gettaskToDo());
 
 		String name = "Gerald";
