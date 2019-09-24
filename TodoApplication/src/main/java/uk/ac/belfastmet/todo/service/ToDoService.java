@@ -29,7 +29,7 @@ public class ToDoService {
 	public ArrayList<Task> gettaskToDo() {
 
 		this.taskToDo = new ArrayList<Task>();
-		// Task(String description, String date, Boolean status, String name, String
+		// Task(String task, String description, String date, Boolean status, String name, String
 		// priority)
 		/*this.taskToDo.add(new Task("1", "learn java", "23 Sep 19", true, "Gerald", "high"));
 		this.taskToDo.add(new Task("2", "learn html", "24 Sep 19", false, "Gerald", "high"));
