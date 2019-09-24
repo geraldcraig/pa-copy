@@ -15,6 +15,7 @@ public class Task {
 	private long id;
 	private String task;
 	private String description;
+	private String date;
 	private Boolean status;
 	private String name;
 	private String priority;
