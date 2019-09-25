@@ -10,7 +10,9 @@ import uk.ac.belfastmet.topten.service.TopTenService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-
+// I would consider removing the empty lines between the class and instance vars and anywhere else in the class
+// one empty line is sufficient
+// java doc for the class
 
 
 @Controller

@@ -7,17 +7,23 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+
+/**
+ * 
+ * @author cra19171869
+ *
+ */
 @Entity
 @Table(name = "task")
 public class Task {
 	
 	// initialising the variables
 	private long id;
-	private String task;
+	private String name;
 	private String description;
 	private String date;
-	private Boolean status;
-	private String name;
+	private String status;
+	private String user;
 	private String priority;
 
 	// Constructors
@@ -25,13 +31,13 @@ public class Task {
 
 	}
 
-	public Task(String task, String description, String date, Boolean status, String name, String priority) {
+	public Task(String name, String description, String date, String status, String user, String priority) {
 
-		this.task = task;
+		this.name = name;
 		this.description = description;
 		this.date = date;
 		this.status = status;
-		this.name = name;
+		this.user = user;
 		this.priority = priority;
 	}
 
@@ -39,18 +45,22 @@ public class Task {
 
 	// Getters and Setters for all the variables
 	@Id
-	@GeneratedValue(strategy = GenerationType.Auto)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	public long getId() {
-		return id;
+		return this.id;
+	}
+	
+	public void setId(long id) {
+		this.id = id;
 	}
 	
 	@Column(name = "name")
-	public String getTask() {
-		return task;
+	public String getName() {
+		return name;
 	}
 
-	public void setTask(String task) {
-		this.task = task;
+	public void setName(String name) {
+		this.name = name;
 	}
 	
 	@Column(name = "description")
@@ -72,21 +82,21 @@ public class Task {
 	}
 
 	@Column(name = "status")
-	public Boolean getStatus() {
+	public String getStatus() {
 		return status;
 	}
 
-	public void setStatus(Boolean status) {
+	public void setStatus(String status) {
 		this.status = status;
 	}
 
 	@Column(name = "user")
-	public String getName() {
-		return name;
+	public String getUser() {
+		return user;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setUser(String user) {
+		this.user = user;
 	}
 
 	@Column(name = "priority")
@@ -96,6 +106,11 @@ public class Task {
 
 	public void setPriority(String priority) {
 		this.priority = priority;
+	}
+	
+	@Override
+	public String toString() {
+		return "name" + name + "description" + description + "date" + date + "status" + status + "user" + user + "priority" + priority;
 	}
 
 	// End of the Getters and Setters

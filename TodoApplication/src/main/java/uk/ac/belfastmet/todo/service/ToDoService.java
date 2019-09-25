@@ -8,8 +8,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import uk.ac.belfastmet.repository.TaskRepository;
 import uk.ac.belfastmet.todo.domain.Task;
+import uk.ac.belfastmet.todo.repository.TaskRepository;
 
 @Service
 public class ToDoService {
@@ -26,7 +26,7 @@ public class ToDoService {
 	
 	private ArrayList<Task> taskToDo;
 
-	public ArrayList<Task> gettaskToDo() {
+	public ArrayList<Task> gettaskToDo () {
 
 		this.taskToDo = new ArrayList<Task>();
 		// Task(String task, String description, String date, Boolean status, String name, String
@@ -37,17 +37,19 @@ public class ToDoService {
 		this.taskToDo.add(new Task("4", "learn javascript", "26 Sep 19", false, "Gerald", "high"));
 		this.taskToDo.add(new Task("5", "learn spring boot", "27 Sep 19", false, "Gerald", "high"));*/
 		
-		Iterable < Task > tasks = taskRepository.findAll();
-		Iterator < Task > iterator = tasks.iterator();
+		Iterable < Task > toDotasks = taskRepository.findAll();
+		Iterator < Task > iterator = toDotasks.iterator();
+		ArrayList<Task> todoList =  new ArrayList<Task>();
 		while (iterator.hasNext()) {
-			log.info("{}", iterator.next().toString());
+			//log.info("{}", iterator.next().toString());
+			todoList.add(iterator.next());
 		}
 		
 		// log debug here for the debugger console to read to know if the array has been successfully read
 		log.debug("if array shows its working correctly if not theres an issue");
 		
 		// returning the tasktodo array
-		return this.taskToDo;
+		return todoList;
 
 	}
 

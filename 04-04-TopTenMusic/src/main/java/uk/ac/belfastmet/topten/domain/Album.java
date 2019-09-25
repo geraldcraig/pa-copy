@@ -1,5 +1,9 @@
 package uk.ac.belfastmet.topten.domain;
 
+// javadoc needed for the class
+// I would remove all but one empty line between code blocks. Make the gaps between code blocks uniform
+// I would consider adding a toString() method so you can access the object info for the album easier
+
 public class Album {
 	
 	

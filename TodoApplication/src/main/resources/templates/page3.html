@@ -51,6 +51,9 @@
 			<th>Status</th>
 			<th>Name</th>
 			<th>Priority</th>
+			<th></th>
+			<th>Options</th>
+			<th></th>
 		</tr>
 	</thead>
 	<tbody>
@@ -58,12 +61,15 @@
 	</tbody>
 	
 		<tr th:each="task: ${tasks}" th:if="${!task.status}">
-			<td th:text="${task.task}"></td>
+			<td th:text="${task.name}"></td>
 			<td th:text="${task.description}"></td>
 			<td th:text="${task.date}"></td>
 			<td th:text="${task.status}"></td>
-			<td th:text="${task.name}"></td>
+			<td th:text="${task.user}"></td>
 			<td th:text="${task.priority}"></td>
+			<td> <button type="button" class="btn btn-primary">Edit</button></td>
+			<td> <button type="button" class="btn btn-primary">Save</button></td>
+			<td> <button type="button" class="btn btn-primary">Delete</button></td>
 		</tr>
 </table>
 

@@ -11,6 +11,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import jdk.internal.org.jline.utils.Log;
 import uk.ac.belfastmet.todo.service.ToDoService;
 
+// JavaDocs shouldn't be empty, they should have info on the method and class in them
+
+/**
+ * 
+ * @author cra19171869
+ *
+ */
 @Controller
 @RequestMapping
 public class ToDoController {

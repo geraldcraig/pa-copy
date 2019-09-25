@@ -7,6 +7,8 @@ import org.springframework.stereotype.Service;
 import uk.ac.belfastmet.topten.domain.Album;
 import uk.ac.belfastmet.topten.domain.Song;
 
+// javadoc needed for the class
+// I would remove all but one empty line between code blocks.
 
 @Service
 public class TopTenService {
