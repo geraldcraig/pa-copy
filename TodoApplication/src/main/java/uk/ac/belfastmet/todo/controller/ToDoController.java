@@ -8,7 +8,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import jdk.internal.org.jline.utils.Log;
+//import jdk.internal.org.jline.utils.Log;
 import uk.ac.belfastmet.todo.service.ToDoService;
 
 // JavaDocs shouldn't be empty, they should have info on the method and class in them
@@ -21,7 +21,7 @@ import uk.ac.belfastmet.todo.service.ToDoService;
 @Controller
 @RequestMapping
 public class ToDoController {
-	
+
 	@Autowired
 	private ToDoService todoService;
 
@@ -32,13 +32,12 @@ public class ToDoController {
 	 * @param model
 	 * @return
 	 */
-	
+
 	@GetMapping("/")
 	public String homePage(Model model) {
-		
+
 		todoService.getNumberOfTasks();
 
-		
 		model.addAttribute("tasks", todoService.gettaskToDo());
 
 		String name = "Gerald";
@@ -59,7 +58,7 @@ public class ToDoController {
 	@GetMapping("/Page2")
 	public String page2Page(Model model) {
 
-		
+
 		model.addAttribute("tasks", todoService.gettaskToDo());
 
 		String name = "Gerald";
@@ -80,7 +79,7 @@ public class ToDoController {
 	@GetMapping("/Page3")
 	public String page3Page(Model model) {
 
-		
+
 		model.addAttribute("tasks", todoService.gettaskToDo());
 
 		String name = "Gerald";

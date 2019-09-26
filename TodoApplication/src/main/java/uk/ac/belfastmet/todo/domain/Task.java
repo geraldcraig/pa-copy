@@ -16,7 +16,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "task")
 public class Task {
-	
+
 	// initialising the variables
 	private long id;
 	private String name;
@@ -49,11 +49,11 @@ public class Task {
 	public long getId() {
 		return this.id;
 	}
-	
+
 	public void setId(long id) {
 		this.id = id;
 	}
-	
+
 	@Column(name = "name")
 	public String getName() {
 		return name;
@@ -62,7 +62,7 @@ public class Task {
 	public void setName(String name) {
 		this.name = name;
 	}
-	
+
 	@Column(name = "description")
 	public String getDescription() {
 		return description;
@@ -107,7 +107,7 @@ public class Task {
 	public void setPriority(String priority) {
 		this.priority = priority;
 	}
-	
+
 	@Override
 	public String toString() {
 		return "name" + name + "description" + description + "date" + date + "status" + status + "user" + user + "priority" + priority;

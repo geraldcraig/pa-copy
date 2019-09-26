@@ -5,9 +5,11 @@ import java.util.Iterator;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import uk.ac.belfastmet.dwarfs.domain.Dwarf;
+import uk.ac.belfastmet.dwarfs.repository.DwarfRepository;
 
 @Service
 public class DwarfService {
@@ -15,9 +17,9 @@ public class DwarfService {
 	Logger log = LoggerFactory.getLogger(DwarfService.class);
 	
 	@Autowired
-	private DwarsfRepository dwarfsRepository;
+	private DwarfRepository dwarfRepository;
 	
-	public void getNumberOfTasks() {
+	public void getNumberOfDwarfs() {
 		log .info(" of tasks: {}", dwarfRepository.count());
 	}
 	
@@ -38,7 +40,7 @@ public class DwarfService {
 		this.disneyDwarfs.add(new Dwarf("Sneezy", "Disney", "Sneezy.png"));*/
 		
 		Iterable < Dwarf > dwarf = dwarfRepository.findAll();
-		Iterator < Dwarf > iterator = dwarfs.iterator();
+		Iterator < Dwarf > iterator = dwarf.iterator();
 		ArrayList<Dwarf> dwarfs = new ArrayList<Dwarf>();
 		while (iterator.hasNext()) {
 			//log.info("{}", iterator.next().toString());

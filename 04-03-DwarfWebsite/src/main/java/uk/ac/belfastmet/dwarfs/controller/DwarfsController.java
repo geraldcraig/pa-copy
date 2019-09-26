@@ -30,11 +30,11 @@ public class DwarfsController {
 	@GetMapping()
 	public String homePage(Model model) {
 		
-		dwarfService.getNumberOfTasks();
+		dwarfService.getNumberOfDwarfss();
 		
 		model.addAttribute("dwarfs", dwarfService.gettaskToDo());
 		
-		String name = "Gerald",
+		String name = "Gerald";
 		model.addAttribute("myName", name);
 		
 		log.info("index page" + name);
@@ -47,7 +47,7 @@ public class DwarfsController {
 		
 		model.addAttribute("dwarfs", dwarfService.gettaskToDo());
 		
-		String name = "Gerald",
+		String name = "Gerald";
 		model.addAttribute("myName", name);
 		
 		log.info("page 2" + name);
@@ -60,7 +60,7 @@ public class DwarfsController {
 		
 		model.addAttribute("dwarfs", dwarfService.gettaskToDo());
 		
-		String name = "Gerald",
+		String name = "Gerald";
 		model.addAttribute("myName", name);
 		
 		log.info("page 3" + name);
