@@ -11,6 +11,10 @@ package TechTest;
 public class Hello {
 	
 	public static void main(String[] args) {
+		Hello hello = new Hello();
+		
+		
+		hello.startHi("hu there");
 
 		System.out.println(startHi("hi there", "hi"));
 		System.out.println("hi there".substring(0, 2));
@@ -21,7 +25,7 @@ public class Hello {
  * @param inStr
  * @return boolean
  */
-	 public static boolean startHi(String inStr, String compare) {
+	 public boolean startHi(String inStr, String compare) {
 		 if(inStr.substring(0, compare.length()) == compare) {
 				return true;}
 			else {
