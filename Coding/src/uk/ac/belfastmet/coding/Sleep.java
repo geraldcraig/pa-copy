@@ -32,10 +32,11 @@ public static void main(String[] args) {
 
 			if (!weekday || vacation); {
 			
-			return true;
+			return true; 
+			}
 
 			
 
 }
 }
-}
+
