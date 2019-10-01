@@ -15,6 +15,7 @@ package uk.ac.belfastmet.coding;
 
 public class Sleep {
 	
+	
 public static void main(String[] args) {
 		
 		Sleep sleep = new Sleep();
@@ -30,13 +31,10 @@ public static void main(String[] args) {
 	public boolean sleepIn(boolean weekday, boolean vacation) {
 			
 
-			if (!weekday || vacation); {
-			
-			return true; 
+			if(!weekday || vacation) {
+				return true;
 			}
-
-			
-
-}
+			return false;
+	}
 }
 
