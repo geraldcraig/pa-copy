@@ -1,0 +1,11 @@
+package uk.ac.belfastmet;
+
+public class MyUnit {
+
+	public String concatenate(String one, String two) {
+		return one + two;
+	}
+	
+	
+
+}

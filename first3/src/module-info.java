@@ -1,0 +1,2 @@
+module first3 {
+}
