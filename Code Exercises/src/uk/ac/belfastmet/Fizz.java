@@ -5,7 +5,7 @@ public class Fizz {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		fizzBuzz(100);
+		fizzBuzz(2, 6);
 
 	}
 	
@@ -35,7 +35,11 @@ public class Fizz {
 		    }
 		    
 		    
-		  }		  
+		  }
+		  
+		  
+		  
+		  
 		  
 		  return result;
 		}
