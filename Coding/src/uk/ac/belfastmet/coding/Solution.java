@@ -13,16 +13,16 @@ public class Solution {
 
 	    //loop through all the numbers below a given number
 	   for( int index = 0; index < number; index++) 
-	     //check if number is divisible by 3 andadd to sum
-	    if(number % 3 == 0) {
+	     //check if number is divisible by 3 and add to sum
+	    if(index % 3 == 0) {
 	      //add number to sum
-	      sum++;
+	      sum += index;
 	     // x.add(index);
 	     // three += index;
 	      //check if number is divisible by 5 and add to sum
-	    } else if (number % 5 == 0) {
+	    } else if (index % 5 == 0) {
 	      //add number to sum
-	     sum++;
+	     sum += index;
 	     // y.add(index);
 	      //five += index;
 	    }
