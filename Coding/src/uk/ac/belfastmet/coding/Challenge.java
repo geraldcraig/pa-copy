@@ -53,9 +53,9 @@ public class Challenge {
 			    result = 1;
 
 			    			    
-}
+	      }
 	}
-	  }
+}
 	  
 	  
 	  
