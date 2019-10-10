@@ -7,8 +7,13 @@ import org.junit.Test;
 public class BracketsTest {
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void testIsBalanced() {
+		
+		String result = Brackets("[()]");
+		
+		assertEquals("[()]", result);
 	}
+
+	
 
 }

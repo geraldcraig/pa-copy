@@ -7,8 +7,11 @@ import org.junit.Test;
 public class StringCatTest {
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void testConcatenate() {
+		
+		String result = StringCat.concatenate("dog", "cat");
+		
+		assertEquals("dogcat", result);
 	}
 
 }
