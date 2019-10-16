@@ -9,8 +9,11 @@ public class ReverseTest {
 	@Test
 	public void testReverse() {
 		
+		String result = Reverse("gerald");
 		
-		assertEquals("Not yet implemented");
+		assertEquals("dlareg", result);
+		
+		
 	}
 
 }

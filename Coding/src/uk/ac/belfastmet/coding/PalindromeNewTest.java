@@ -16,7 +16,7 @@ public class PalindromeNewTest {
 	@Test
 	public void testIsPalindrome1() {
 		PalindromeNew palindromeNew = new PalindromeNew();
-		boolean result = palindromeNew.isPalindrome("alison");
+		boolean result = palindromeNew.isPalindrome("abba");
 		assertEquals(true, result);
 	}
 
