@@ -42,9 +42,5 @@ public class Giraffe {
 	public void setColour(String colour) {
 		this.colour = colour;
 	}
-	
-	
-	
-
 }
 
