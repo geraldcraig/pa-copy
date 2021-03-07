@@ -1,5 +1,7 @@
 package chapter10;
 
+import javax.swing.JOptionPane;
+
 public class ExceptionDemo {
 	public static void main(String[] args)
 	{
