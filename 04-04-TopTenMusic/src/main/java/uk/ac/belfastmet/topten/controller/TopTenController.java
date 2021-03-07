@@ -32,6 +32,8 @@ public class TopTenController {
 		
 		topTenService.getalbumsTopTen();
 		
+		String attributeName = null;
+		Object attributeValue = null;
 		model.addAttribute(attributeName, attributeValue);
 		
 		log.info("index log");

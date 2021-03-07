@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Division {
 
 	public static void main(String[] args) {
-		/*Scanner input = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 		
 		System.out.print("Enter integer: ");
 		int myInt = input.nextInt();
@@ -18,7 +18,7 @@ public class Division {
 		input.nextLine();
 				
 		String myString = input.nextLine();
-		System.out.printf("You entered \"%s\".%n%n", myString);*/
+		System.out.printf("You entered \"%s\".%n%n", myString);
 		int counter = 100;
 		
 		do {

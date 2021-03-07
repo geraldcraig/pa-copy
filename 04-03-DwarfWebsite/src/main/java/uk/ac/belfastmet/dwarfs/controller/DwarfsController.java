@@ -30,7 +30,7 @@ public class DwarfsController {
 	@GetMapping()
 	public String homePage(Model model) {
 		
-		dwarfService.getNumberOfDwarfss();
+		dwarfService.getNumberOfDwarfs();
 		
 		model.addAttribute("dwarfs", dwarfService.gettaskToDo());
 		

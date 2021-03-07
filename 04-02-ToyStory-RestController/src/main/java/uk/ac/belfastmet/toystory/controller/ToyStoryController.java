@@ -1,4 +1,4 @@
-package uk.ac.belfastmet.toystory.controller;
+  package uk.ac.belfastmet.toystory.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -39,8 +39,8 @@ public class DwarfService {
 		this.disneyDwarfs.add(new Dwarf("Grumpy", "Disney", "Grumpy.png"));
 		this.disneyDwarfs.add(new Dwarf("Sneezy", "Disney", "Sneezy.png"));*/
 		
-		Iterable < Dwarf > dwarf = dwarfRepository.findAll();
-		Iterator < Dwarf > iterator = dwarf.iterator();
+		Iterable <Dwarf> dwarf = dwarfRepository.findAll();
+		Iterator <Dwarf> iterator = dwarf.iterator();
 		ArrayList<Dwarf> dwarfs = new ArrayList<Dwarf>();
 		while (iterator.hasNext()) {
 			//log.info("{}", iterator.next().toString());
