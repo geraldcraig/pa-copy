@@ -9,8 +9,8 @@ public class AnimalArray {
 		animalArray.animalArray();
 		ArrayList<String> outcome = animalArray.animalArray();
 		System.out.println(" :" + outcome); 
-		ArrayList<String> newOutcome = addAnimal.addAnimal();
-		System.out.println("Added animals: " + newOutcome);
+		//ArrayList<String> newOutcome = addAnimal.addAnimal();
+		//System.out.println("Added animals: " + newOutcome);
 	
 	}
 	

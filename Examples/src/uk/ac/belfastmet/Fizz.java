@@ -5,21 +5,21 @@ public class Fizz {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		fizzBuzz(100);
+		fizzBuzz(0, 100);
 
 	}
 	
-	public String[] fizzBuzz(int start, int end) {
+	public static String[] fizzBuzz(int start, int end) {
 		  String[] result = new String[end-start];
 		  int currentNumber = start;
 		  
 		  
 		  
-		  for(int index = 0; index < end-start; index++);
+		  for(int i = 0; i < end-start; i++);
 		  {
 		    if(currentNumber % 15 == 0)
 		    {
-		      result[index] = "FizzBuzz";
+		      result[i]. += "FizzBuzz"; 
 		    }
 		    else if(currentNumber % 3 == 0)
 		    {
@@ -31,7 +31,7 @@ public class Fizz {
 		    }
 		    else
 		    {
-		      result[index] = String.valueOf(currentNumber);
+		      result[i] = String.valueOf(currentNumber);
 		    }
 		    
 		    
