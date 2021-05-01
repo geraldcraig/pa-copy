@@ -5,11 +5,11 @@ public class Fizz {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		fizzBuzz(0, 100);
+		//fizzBuzz(0, 100);
 
 	}
 	
-	public static String[] fizzBuzz(int start, int end) {
+	/*public static String[] fizzBuzz(int start, int end) {
 		  String[] result = new String[end-start];
 		  int currentNumber = start;
 		  
@@ -38,6 +38,6 @@ public class Fizz {
 		  }		  
 		  
 		  return result;
-		}
+		} */
 
 }
