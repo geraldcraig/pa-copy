@@ -5,13 +5,15 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class ReverseTest {
-
+	
+	String result = "gerald";
+	
 	@Test
 	public void testReverse() {
 		
-		String result = reverse("gerald");
+		//String result = reverse("gerald");
 		
-		assertEquals("dlareg", result);
+		//assertEquals("dlareg", Reverse);
 		
 		
 	}

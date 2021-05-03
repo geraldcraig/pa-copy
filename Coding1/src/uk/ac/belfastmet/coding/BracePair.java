@@ -2,7 +2,7 @@ package uk.ac.belfastmet.coding;
 
 public class BracePair {
 	
-	int totalPairsOfBraces = 0;
+	int totalPairsOfBraces = 0; 
 
     /*Let's check for invalid input first
     *The first checks are for length because they are quick to rule out
@@ -34,5 +34,5 @@ public class BracePair {
     return totalPairsOfBraces;
   }	
 
-
 }
+
