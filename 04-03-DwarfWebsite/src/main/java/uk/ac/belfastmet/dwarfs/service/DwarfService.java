@@ -44,7 +44,7 @@ public class DwarfService {
 		ArrayList<Dwarf> dwarfs = new ArrayList<Dwarf>();
 		while (iterator.hasNext()) {
 			//log.info("{}", iterator.next().toString());
-			dwarfList.add(iterator.next())
+			dwarfList.add(iterator.next());
 		}
 		
 		return dwarfs;
