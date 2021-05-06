@@ -4,7 +4,13 @@ public class New {
 	
 	public static void main(String[] args) {
 		
-		System.out.println("New");
+		String name = "John Doe";
+		
+		int charPos = name.indexOf("D");
+		
+		String lastName = name.substring(charPos);
+		
+		System.out.println(lastName);
 		
 	}
 
