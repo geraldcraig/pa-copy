@@ -10,7 +10,8 @@ public class ShrekController {
 	
 	@GetMapping("")
 	public String home() {
-		return "The characters in the movie Shrek";
+		//return "The characters in the movie Shrek";
+		return "shrekmovie";
 		
 	}
 	

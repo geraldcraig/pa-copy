@@ -24,10 +24,13 @@ public class DwarfsController {
 	
 	Logger log = LoggerFactory.getLogger(DwarfsController.class);
 	
-	
-	
-	
 	@GetMapping()
+	public String homePage() {
+		return "index";
+	}
+	
+	
+	/*@GetMapping()
 	public String homePage(Model model) {
 		
 		dwarfService.getNumberOfDwarfs();
@@ -40,7 +43,7 @@ public class DwarfsController {
 		log.info("index page" + name);
 		log.debug("there is a possible path error page one is not able to load");;
 		return "index";
-	}
+	}*/
 	
 	@GetMapping("/disney")
 	public String disneyPage(Model model) {
