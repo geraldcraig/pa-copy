@@ -5,13 +5,11 @@ package uk.ac.belfastmet.topten.domain;
 //I would consider adding a toString() method so you can access the object info for the album easier
 
 public class Song {
-	
-	
+
 	private String title;
 	private String artist;
 	private String image;
 	private String position;
-	
 	
 	public Song() {
 		super();
@@ -53,6 +51,10 @@ public class Song {
 	}
 	public void setPosition(String position) {
 		this.position = position;
+	}
+	
+	public String toString() {
+		return artist + " " + title + " " + image;
 	}
 	
 }

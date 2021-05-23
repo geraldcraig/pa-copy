@@ -52,4 +52,8 @@ public class Album {
 		this.position = position;
 	}
 	
+	public String toString() {
+		return artist + " " + title + " " + image;
+	}
+	
 }

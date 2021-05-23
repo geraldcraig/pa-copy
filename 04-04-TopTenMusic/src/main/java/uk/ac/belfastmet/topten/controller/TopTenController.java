@@ -20,8 +20,8 @@ import org.slf4j.LoggerFactory;
 @RequestMapping
 public class TopTenController {
 	
-	@Autowired
-	private TopTenService topTenService;
+	//@Autowired
+	//private TopTenService topTenService;
 	
 	
 	Logger log = LoggerFactory.getLogger(TopTenController.class);
@@ -30,11 +30,14 @@ public class TopTenController {
 	@GetMapping()
 	public String homePage(Model model) {
 		
-		topTenService.getalbumsTopTen();
+		//topTenService.getalbumsTopTen();
 		
-		String attributeName = null;
-		Object attributeValue = null;
-		model.addAttribute(attributeName, attributeValue);
+		//String attributeName = null;
+		//Object attributeValue = null;
+		//model.addAttribute(attributeName, attributeValue);
+		
+		model.addAttribute("pageTitle", "TopTen");
+		model.addAttribute("numberOfTopTen", "10");
 		
 		log.info("index log");
 		
@@ -50,7 +53,6 @@ public class TopTenController {
 	@GetMapping("/singles")
 	public String singlesPage(Model model) {
 		
-		
 		TopTenService toptenService = new TopTenService();
 		model.addAttribute("pageTitle", "Top Ten Singles");
 		model.addAttribute("singles", toptenService.getsinglesTopTen());
@@ -62,7 +64,6 @@ public class TopTenController {
 	
 	@GetMapping("/albums")
 	public String albumsPage(Model model) {
-		
 		
 		TopTenService toptenService = new TopTenService();
 		model.addAttribute("pageTitle", "Top Ten Albums");
