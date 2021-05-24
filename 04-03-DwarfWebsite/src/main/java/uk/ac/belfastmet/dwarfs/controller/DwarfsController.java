@@ -8,7 +8,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import jdk.internal.org.jline.utils.Log;
+
 import uk.ac.belfastmet.dwarfs.service.DwarfService;
 /**
  * 
@@ -28,10 +28,10 @@ public class DwarfsController {
 	@GetMapping()
 	public String homePage(Model model) {
 		
-		//dwarfService.getNumberOfDwarfs();
+		dwarfService.getNumberOfDwarfs();
 		
-		//model.addAttribute("pageTitle", "Dwarfs rule");
-		model.addAttribute("dwarfs", this.dwarfService.getNumberOfDwarfs());
+		model.addAttribute("pageTitle", "Dwarfs rule");
+		//model.addAttribute("dwarfs", this.dwarfService.getNumberOfDwarfs());
 		
 		String name = "Gerald";
 		model.addAttribute("myName", name);
