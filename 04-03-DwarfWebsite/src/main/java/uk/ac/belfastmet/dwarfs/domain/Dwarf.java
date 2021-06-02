@@ -14,20 +14,26 @@ public class Dwarf {
 	//instance variables
 	private String name;
 	private String author;
-	private int age;
-	private String image;
+	private long id;
+	//private int age;
+	//private String image;
 	
 	// Constructors
 	public Dwarf() {		
 		}
 	
 	
-	public Dwarf(String name, String author, int age, String image) {
+	/*public Dwarf(String name, String author, int age, String image) {
 		super();
 		this.name = name;
 		this.author = author;
 		this.age = age;
 		this.image = image;
+	}*/
+	
+	public Dwarf(String name, String author) {
+		this.name = name;
+		this.author = author;
 	}
 	
 	//End of Constructors
@@ -36,11 +42,11 @@ public class Dwarf {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	public long getId() {
-		return this.getId();
+		return id;
 	}
 	
 	public void setId(long id) {
-		this.getId();
+		this.id = id;
 	}
 	
 	@Column(name = "name")
@@ -60,7 +66,7 @@ public class Dwarf {
 		this.author = author;
 	}
 	
-	@Column(name = "age")
+	/*@Column(name = "age")
 	public int getAge() {
 		return age;
 	}
@@ -79,6 +85,12 @@ public class Dwarf {
 	@Override
 	public String toString() {
 		return "name" + name +  "author" + author + "age" + age + "image" + image;
+	}*/
+	
+
+	public String toString() {
+		return this.name + " " + this.author;
 	}
+	
 
 }

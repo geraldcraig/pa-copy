@@ -19,16 +19,16 @@ public class DwarfService {
 	@Autowired
 	private DwarfRepository dwarfRepository;
 	
-	public void getNumberOfDwarfs() {
+	/*public void getNumberOfDwarfs() {
 		log .info(" of tasks: {}", dwarfRepository.count());
-	}
+	}*/
 	
-	private ArrayList<Dwarf> disneyDwarfs;
-	private ArrayList<Dwarf> tolkienDwarfs;
+	//private ArrayList<Dwarf> disneyDwarfs;
+	//private ArrayList<Dwarf> tolkienDwarfs;
 	
-	public ArrayList<Dwarf> getDisneyDwarfs() {
+	//public ArrayList<Dwarf> getDisneyDwarfs() {
 		
-		this.disneyDwarfs = new ArrayList<Dwarf>();
+		//this.disneyDwarfs = new ArrayList<Dwarf>();
 		
 		//add dwarfs here!
 		/*this.disneyDwarfs.add(new Dwarf("Sleepy", "Disney", "Sleepy.png"));
@@ -39,16 +39,43 @@ public class DwarfService {
 		this.disneyDwarfs.add(new Dwarf("Grumpy", "Disney", "Grumpy.png"));
 		this.disneyDwarfs.add(new Dwarf("Sneezy", "Disney", "Sneezy.png"));*/
 		
-		
+		public Iterable<Dwarf> getNumberOfDwarfs() {
+			log.info("# of dwarfs: {}", dwarfRepository.count());
 			Iterable <Dwarf> dwarf = dwarfRepository.findAll();
 			Iterator <Dwarf> iterator = dwarf.iterator();
-			ArrayList<Dwarf> dwarfs = new ArrayList<Dwarf>();
+			//ArrayList<Dwarf> dwarfs = new ArrayList<Dwarf>();
 			while (iterator.hasNext()) {
-				//log.info("{}", iterator.next().toString());
+				log.info("{}", iterator.next().toString());
 				//dwarfList.add(iterator.next());
 			}
 			
-			return dwarfs;
+			return dwarf;
+		}
+		
+		public Iterable<Dwarf> getDisneyDwarfs() {
+			log.info("# of dwarfs: {}", dwarfRepository.count());
+			Iterable <Dwarf> dwarf = dwarfRepository.findAll();
+			Iterator <Dwarf> iterator = dwarf.iterator();
+			//ArrayList<Dwarf> dwarfs = new ArrayList<Dwarf>();
+			while (iterator.hasNext()) {
+				log.info("{}", iterator.next().toString());
+				//dwarfList.add(iterator.next());
+			}
+			
+			return dwarf;
+		}
+		
+		public Iterable<Dwarf> getTolkienDwarfs() {
+			log.info("# of dwarfs: {}", dwarfRepository.count());
+			Iterable <Dwarf> dwarf = dwarfRepository.findAll();
+			Iterator <Dwarf> iterator = dwarf.iterator();
+			//ArrayList<Dwarf> dwarfs = new ArrayList<Dwarf>();
+			while (iterator.hasNext()) {
+				log.info("{}", iterator.next().toString());
+				//dwarfList.add(iterator.next());
+			}
+			
+			return dwarf;
 		}
 		
 	
