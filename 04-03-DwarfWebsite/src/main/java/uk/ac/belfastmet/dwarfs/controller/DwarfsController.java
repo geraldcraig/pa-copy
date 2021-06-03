@@ -31,7 +31,7 @@ public class DwarfsController {
 		dwarfService.getNumberOfDwarfs();
 		
 		model.addAttribute("pageTitle", "Dwarfs rule");
-		model.addAttribute("dwarfs", this.dwarfService.getNumberOfDwarfs());
+		model.addAttribute("numberOfDwarfs", this.dwarfService.getNumberOfDwarfs());
 		
 		String name = "Gerald";
 		model.addAttribute("myName", name);
@@ -53,7 +53,7 @@ public class DwarfsController {
 		
 		log.info("page 2" + name);
 		log.debug("there is a possible path error page one is not able to load");;
-		return "page 2";
+		return "disney";
 	}
 	
 	@GetMapping("/tolkien")
@@ -69,7 +69,7 @@ public class DwarfsController {
 		
 		log.info("page 3" + name);
 		log.debug("there is a possible path error page one is not able to load");;
-		return "page 3";
+		return "tolkien";
 	}
 
 }
