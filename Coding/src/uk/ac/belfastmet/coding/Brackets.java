@@ -11,7 +11,7 @@ public class Brackets {
 	int closedSquare = 0;
 
 	if (str.length() ==0 || str.length()%2 == 1) {
-		return result;    
+		//return result;    
 	}
 	else {
 /**
@@ -49,13 +49,8 @@ public class Brackets {
 }
 	return result;
 }
-
 	
-	
-	
-}
-	
-	
+}	
 	
 	
 	
