@@ -10,7 +10,8 @@ public class ToyStoryController {
 	
 	@GetMapping("") 
 	public String home() {
-		return "The characters in Toy Story are";
+		//return "The characters in Toy Story are";
+		return "toystory";
 	}
 	
 	@GetMapping("/woody")

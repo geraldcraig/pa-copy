@@ -26,7 +26,7 @@ public class ToDoService {
 
 	public ArrayList<Task> taskToDo;
 
-	public ArrayList<Task> gettaskToDo() {
+	/*public ArrayList<Task> gettaskToDo() {
 
 		this.taskToDo = new ArrayList<Task>();
 		// Task(String task, String description, String date, Boolean status, String name, String
@@ -37,20 +37,43 @@ public class ToDoService {
 		this.taskToDo.add(new Task("4", "learn javascript", "26 Sep 19", false, "Gerald", "high"));
 		this.taskToDo.add(new Task("5", "learn spring boot", "27 Sep 19", false, "Gerald", "high"));*/
 
-		Iterable < Task > toDotasks = taskRepository.findAll();
+		/*Iterable < Task > toDotasks = taskRepository.findAll();
 		Iterator < Task > iterator = toDotasks.iterator();
 		ArrayList<Task> todoList =  new ArrayList<Task>();
 		while (iterator.hasNext()) {
 			//log.info("{}", iterator.next().toString());
 			todoList.add(iterator.next());
-		}
+		}*/
 
 		// log debug here for the debugger console to read to know if the array has been successfully read
-		log.debug("if array shows its working correctly if not theres an issue");
+		//log.debug("if array shows its working correctly if not theres an issue");
 
 		// returning the tasktodo array
-		return todoList;
+		//return todoList;
+
+	//}*/
+	
+	public Iterable<Task> getTasks() {
+
+
+		log.info("looping through the database  ");
+		// iterator to loop through data from tasks database
+		Iterable<Task> tasks = taskRepository.findAll();
+		Iterator<Task> iterator = tasks.iterator();
+		ArrayList<Task> todoList =  new ArrayList<Task>();
+		
+		  while (iterator.hasNext()) {
+			  //todoList.add(iterator.next());
+		
+			  //tasksArray.add(iterator.next());
+		  log.info("{}", iterator.next().toString()); 
+		  log.info("one row "); }
+		  
+		log.info("returns ",tasks.toString());
+		
+		return tasks;
 
 	}
+
 
 }

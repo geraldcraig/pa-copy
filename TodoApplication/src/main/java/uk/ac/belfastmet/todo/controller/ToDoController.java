@@ -35,10 +35,10 @@ public class ToDoController {
 
 	@GetMapping("/")
 	public String homePage(Model model) {
-
-		todoService.getNumberOfTasks();
-
-		model.addAttribute("tasks", todoService.gettaskToDo());
+		//ToDoService todoService = new ToDoService();
+		//todoService.getNumberOfTasks();
+	
+		model.addAttribute("tasks", todoService.getTasks());
 
 		String name = "Gerald";
 		model.addAttribute("myName", name);
@@ -59,7 +59,7 @@ public class ToDoController {
 	public String page2Page(Model model) {
 
 
-		model.addAttribute("tasks", todoService.gettaskToDo());
+		model.addAttribute("tasks", todoService.getTasks());
 
 		String name = "Gerald";
 		model.addAttribute("myName", name);
@@ -80,7 +80,7 @@ public class ToDoController {
 	public String page3Page(Model model) {
 
 
-		model.addAttribute("tasks", todoService.gettaskToDo());
+		model.addAttribute("tasks", todoService.getTasks());
 
 		String name = "Gerald";
 		model.addAttribute("myName", name);
